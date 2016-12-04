@@ -1,0 +1,39 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript"></script>
+</head>
+
+<body>
+
+</body>
+<script>
+
+var clientId = "55e86230a27ba2f";
+
+//get data
+$.ajax({
+	//search for tag {dogs}
+    url: "https://api.imgur.com/3/gallery/t/dogs",
+    type: "GET",
+    //to do: try json, parsejson
+    datatype: "text",
+    success: giveData,
+    error: giveData,
+    beforeSend: function (xhr) {
+        xhr.setRequestHeader("Authorization", "Client-ID " + clientId);
+    }
+});
+
+function giveData(data) {
+	//loop through dogs data
+	for(var i = 0; i<data.data.items.length; i++){
+	   $("body").append(JSON.stringify(data.data.items[i].title)+"<br>");  
+	}   
+}
+
+
+
+
+</script>
+</html>
