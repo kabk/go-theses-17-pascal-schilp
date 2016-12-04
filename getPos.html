@@ -106,7 +106,13 @@ function getOffset( el ) {
     return { top: _y, left: _x };
 }
 
+// find words in text and wrap with span
+// $("textDiv:contains("+keyword+")").html(function(_, html) {
+//    return  html.replace(keyword, '<span class="smallcaps">'+keyword+'</span>')
+// });
+
 function generateReference( keyword ){
+
     console.log(getOffset( document.getElementById(keyword) ).top);
 
     //this get drawn
