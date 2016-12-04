@@ -9,12 +9,42 @@ TO DO:
     src: url(../fonts/andalemono.ttf);
 }
 
+@font-face {
+    font-family: caslon;
+    src: url(../fonts/Caslon-Black.otf);
+}
+
+@font-face {
+    font-family: circular;
+    src: url(../fonts/CircularStd-Book.otf);
+}
+
 *{
-	padding: 5px 5px 5px 5px;
+	padding: 0px 5px 0px 5px;
+}
+
+h1{
+	font-family:caslon;
+	letter-spacing:-0.03em;
+	font-size:50px;
+	line-height:45px;
+}
+
+h2{ 
+	font-family:caslon;
+}
+
+h3{ 
+	font-family:caslon;
+}
+
+h6{
+	font-family:caslon;
 }
 
 #mainText{
 	white-space: pre-line;
+	font-family:circular;
 }
 
 #highlight{
@@ -28,7 +58,6 @@ TO DO:
 }
 
 #index{
-
 	font-family:andalemono,monospace;
 	font-size:10px;
 	line-height: 1.4em;
@@ -64,9 +93,13 @@ TO DO:
 #memes img{
 	max-width:100%;
 	max-height:100%;
+	outline: 1px solid black;
+	padding:0px;
+	margin-bottom:10px;
 }
 
 #memes img:hover{
+	outline: 2px solid blue;
 	cursor:crosshair;
 }
 
@@ -98,13 +131,51 @@ TO DO:
 	position:static;
 }
 
-@media screen and (min-width: 770px) {
+.affix-left{
+	position:static;
+}
+
+.colorAnim {
+  animation: pulse 5s infinite;
+}
+
+.colorAnim:hover{
+	cursor:crosshair;
+}
+
+@keyframes pulse {
+  0% {
+    color: black;
+  }
+  50% {
+    color: blue;
+  }
+
+  100% {
+    color: black;
+  }
+}
+
+@media screen and (min-width: 755px) {
 	.affix{
 		position:fixed;
 	}
 
+	.affix-left{
+		position:fixed;
+		padding-right:10px;
+		width:inherit;
+		text-align: right;
+	}
+
 	#marginleft{
+		font-family:andalemono,monospace;
+		font-size:10px;
+		line-height: 90vh;
+		color:blue;
+		height:100vh;
 		display:block;
+		text-align:right;
 	}
 
 	#marginright{
