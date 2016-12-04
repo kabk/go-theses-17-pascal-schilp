@@ -6,7 +6,7 @@ TO DO:
 
 @font-face {
     font-family: andalemono;
-    src: url(fonts/andalemono.ttf);
+    src: url(../fonts/andalemono.ttf);
 }
 
 *{
