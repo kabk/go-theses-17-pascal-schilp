@@ -25,9 +25,13 @@
     width:60vw;
     height:auto;
     white-space: pre-line;
-    background-color: grey;
     float:left;
 }
+
+span{
+    border: 1px solid black;
+}
+
 </style>
 <script src="http://code.jquery.com/jquery-latest.min.js"
         type="text/javascript"></script>
@@ -78,7 +82,7 @@ While much has been written of the economic advantages of Internet-enabled comme
 Author Andrew Keen, a long-time critic of the social transformations caused by the Internet, has recently focused on the economic effects of consolidation from Internet businesses. Keen cites a 2013 Institute for Local Self-Reliance report saying brick-and-mortar retailers employ 47 people for every $10 million in sales while Amazon employs only 14. Similarly, the 700-employee room rental start-up Airbnb was valued at $10 billion in 2014, about half as much as Hilton Hotels, which employs 152,000 people. And car-sharing Internet startup Uber employs 1,000 full-time employees and is valued at $18.2 billion, about the same valuation as Avis and Hertz combined, which together employ almost 60,000 people.[105]
 
 <span id="match">Telecommuting</span>
-Telecommuting is the performance within a traditional worker and employer relationship when it is facilitated by tools such as groupware, virtual private networks, conference calling, videoconferencing, and voice over IP (VOIP) so that work may be performed from any location, most conveniently the worker's home. It can be efficient and useful for companies as it allows workers to communicate over long distances, saving significant amounts of travel time and cost. As broadband Internet connections become commonplace, more workers have adequate bandwidth at home to use these tools to link their home to their corporate intranet and internal communication networks.
+Telecommuting is the performance within a traditional worker and employer relationship when it is facilitated by tools such as groupware, virtual private networks, conference calling, videoconferencing, and voice over IP (VOIP) so that work may be performed from any location, most conveniently the worker's home. <span id="it">It</span> can be efficient and useful for companies as it allows workers to communicate over long distances, saving significant amounts of travel time and cost. As broadband Internet connections become commonplace, more workers have adequate bandwidth at home to use these tools to link their home to their corporate intranet and internal communication networks.
 
 Crowdsourcing
 The Internet provides a particularly good venue for crowdsourcing, because individuals tend to be more open in web-based projects where they are not being physically judged or scrutinized and thus can feel more comfortable sharing.[citation needed]
@@ -103,8 +107,12 @@ function getOffset( el ) {
 }
 
 function generateReference( keyword ){
+    console.log(getOffset( document.getElementById(keyword) ).top);
 
-    var div = document.createElement("matchDiv");
+    //this get drawn
+    var div = document.createElement("div");
+    div.id = "match"+keyword;
+
     div.style.width = "inherit";
     div.style.height = "auto";
     div.style.color = "black";
@@ -116,7 +124,12 @@ function generateReference( keyword ){
 
 }
 
+
 generateReference('match');
 generateReference('electronicbusiness');
+generateReference('it');
+
+
+
 </script>
 </html>
