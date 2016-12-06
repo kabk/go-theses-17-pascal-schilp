@@ -20,7 +20,7 @@ TO DO:
 }
 
 *{
-	padding: 0px 5px 0px 5px;
+	padding: 0;
 }
 
 h1{
@@ -45,6 +45,12 @@ h6{
 #mainText{
 	white-space: pre-line;
 	font-family:circular;
+	display: none;
+}
+
+#mainMemes{
+	display:block;
+	height:auto;
 }
 
 #highlight{
@@ -143,6 +149,37 @@ h6{
 	cursor:crosshair;
 }
 
+.generatedMeme{
+	background-color:white;
+	outline:#DDDEDD solid 1px;
+	float: left;
+	margin:5px;
+	margin-right:20px;
+
+	min-height:150px;
+	max-height:150px;
+	overflow:scroll;
+	padding:10px;
+	font-family:circular;
+	color:#DDDEDD;
+	font-size:10px;
+}
+
+.match{
+	color:blue;
+	text-decoration:underline;
+
+}
+
+.generatedMeme img{
+	max-width:100%;
+	max-height:100%;
+}
+
+.generatedMeme:hover{
+	outline:blue solid 1px;
+}
+
 @keyframes pulse {
   0% {
     color: black;
@@ -156,6 +193,19 @@ h6{
   }
 }
 
+@media print { 
+
+	#mainText{
+		display:block;
+		color:black;
+	}
+
+	#mainMemes{
+		display:none;
+		height:auto;
+	}
+}
+
 @media screen and (min-width: 755px) {
 	.affix{
 		position:fixed;
@@ -166,6 +216,10 @@ h6{
 		padding-right:10px;
 		width:inherit;
 		text-align: right;
+	}
+
+	#mainText{
+		display:none;
 	}
 
 	#marginleft{
