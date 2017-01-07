@@ -1,75 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 	<head>
 
-	  	<title>Participatory Media and Memes as Pitchforks and Torches</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	    <meta charset="utf-8"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles.css">
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<!-- <script src="js/main.js"></script> -->
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	</head>
-  
-
 
 
 	<body>
 
-		<div class="row">
+		<div id="online">
 
-	<!-- index -->	    
-		    <div id="index" class="col-sm-2 col-sm-push-9">
-		    	<div class="affix">
-					<span onclick="changeShit();" id="chapter">1.Introduction</span>
-					<span onclick="changeShit2();" id="chapter">2.Understanding Terms</span>
-					<span id="subchapter">2.1 Memes</span>
-					<span id="subchapter">2.2 Virals</span>
-					<span id="subchapter">2.3 Cute Cats</span>
-					<span id="subchapter">2.4 Participatory Media</span>
-					<span id="chapter">3. Memes as Activism</span>
-					<span id="subchapter">3.1 Occupy Wallstreet</span>
-					<span id="subchapter">3.2 Boston Marathon Bombing</span>
-					<span id="subchapter">3.3 Arab Spring</span>
-					<span id="chapter">4. Graphic Design and Memes</span>
-					<span id="subchapter">4.1 Some Chapter</span>
-					<span id="subchapter">4.2 Another Chapter</span>
-					<span id="chapter">5. Conclusion</span>
-					<span id="chapter">6. Acknowledgements</span>
-					<span id="chapter">7. References</span>
-				</div>
-			</div>
-
-	<!-- column margin left -->
-		    <div id="marginleft" class="col-sm-1 col-sm-pull-2"><div class="affix-left">{</div></div>
-
-	<!-- mainText -->
-		    <div id="mainText" class="col-sm-8">
-				<h1>Participatory Media and Memes as Pitchforks and Torches</h1>
-				<br><br>
-				<h3><i class="colorAnim">"The revolution will not be televised"</i></h3>
-				<br><br><br>
-				<h6>By Pascal Schilp</h6>
-		    </div>
-
-		    <div id="mainMemes" class="col-sm-7 col-sm-pull-1">
-				<br><h1>Participatory Media <br>and Memes as Pitchforks <br>and Torches<br><br></h1>
-		    </div>
+					<div id="header"></div>
 
 
-	<!-- references -->
-		    <div id="references" style="float:left;" class="col-sm-1 col-sm-pull-9"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>asdasads sdfsdf fsd dsf dfs sdf dsf  sdf dsf dsf asdasads sdfsdf fsd dsf dfs sdf dsf  sdf dsf dsf asdasads sdfsdf fsd dsf dfs sdf dsf  sdf dsf dsfasdasads sdfsdf fsd dsf dfs sdf dsf  sdf dsf dsfasdasads sdfsdf fsd dsf dfs sdf dsf  sdf dsf dsfasdasads sdfsdf fsd dsf dfs sdf dsf  sdf dsf dsfasdasads sdfsdf fsd dsf dfs sdf dsf  sdf dsf dsfasdasads sdfsdf fsd dsf dfs sdf dsf  sdf dsf dsf </div>
 
+					<div id="maindiv" class="container-fluid">
+						<div class="row">
+							<div id="left" class="col-sm-6"></div>
+							<div id="right" class="col-sm-6"></div>
+						</div>
+					</div>
+
+
+
+					<div class="container-fluid">
+						<div class="row">
+							<div id="footer" class="col-sm-12">
+							</div>
+						</div>
+					</div>
+
+
+
+					<div id="navigation2">
+					</div>
+
+
+
+					<div id="navigation">
+					</div>
+		
 		</div>
 
 	</body>
 
-	<script src="js/getMemes.js"></script>
+	<script src="memes.js"></script>
 
 </html>

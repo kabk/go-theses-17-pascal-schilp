@@ -1,0 +1,184 @@
+@font-face {
+    font-family: atlas;
+    src: url(atlas.otf);
+}
+
+@font-face {
+    font-family: caslon;
+    src: url(caslon.otf);
+}
+
+*{
+	margin:0;
+	padding:0;
+	cursor:default;
+	 -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+     -khtml-user-select: none; /* Konqueror */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+#header{
+	position:fixed;
+	z-index:999;
+	background-color:black;
+
+
+	width:100vw;
+	height:20vh;
+
+	margin-top:-20vh;
+	padding-top:15px;
+	
+	font-family:caslon;
+	font-size:60px;
+	line-height: 55px;
+	letter-spacing: -3px;
+	text-align:center;
+	color:white;
+}
+
+#footer{
+	background-color: black;
+	height:20vh;
+	min-height:20vh;
+
+	line-height: 25px;
+
+	color:white;
+	font-family: caslon;
+	font-size:30px;
+	text-align: center;
+	padding-top:40px;
+}
+
+#online{
+	display:block;
+}
+
+a{
+	text-decoration: none!important;
+	color:white!important;
+}
+
+a:hover{
+	cursor: crosshair;
+	color:blue!important;
+}
+
+.imgur{
+	width:105%;
+	height:40vh;
+
+	border-bottom: solid black 5px;
+	padding-bottom:15px;
+	padding-top:15px;
+
+	margin-left:-15px;
+	margin-right:0;
+	padding-left:0;
+	padding-right:0;
+	float:left;
+	overflow:hidden;
+
+	font-family: atlas;
+
+}
+
+.imgur img{
+	max-width:100%;
+	max-height:100%;
+}
+
+
+
+#navigation2{
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg);
+	z-index: 1000;
+	position:fixed;
+    
+    background-color: black;
+    border:solid blue 4px;
+
+    cursor:crosshair;
+
+    padding-right:50px;
+    padding-left:200px;
+    margin-top:-590px;
+    margin-left:770px;
+    width:850px;
+    height:70px;
+
+    font-family:caslon;
+    color:white;
+    font-size:25px;
+    line-height:65px;
+	text-align: center;
+	white-space: nowrap;
+	overflow:scroll;
+}
+
+#navigation{
+    -ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Safari */
+    transform: rotate(270deg);
+	z-index: 1000;
+	position:fixed;
+    
+    background-color: black;
+    border:solid blue 4px;
+
+    cursor:crosshair;
+
+    padding-left:50px;
+    padding-right:200px;
+    margin-top:-590px;
+    margin-left:-340px;
+    width:850px;
+    height:70px;
+
+    font-family:atlas;
+    color:white;
+    font-size:25px;
+    line-height:62px;
+
+	white-space: nowrap;
+	overflow:scroll;
+}
+
+#maindiv{
+	margin-top:20vh;
+}
+
+#left{
+	font-family: atlas;
+	color:blue;
+	text-align: center;
+	font-size:45px;
+	line-height: 45px;
+	padding-top:60px;
+	min-height:80vh;
+	height:80vh;
+	border-right:solid 2.5px black;
+}
+
+#right{
+	overflow:scroll;
+	min-height:80vh;
+	height:80vh;
+	border-left:solid 2.5px black;
+}
+
+
+@media print { 
+ #online{
+ 	/*display:none;*/
+ }
+
+
+}
