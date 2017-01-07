@@ -3,12 +3,7 @@ var intro = ["essay","research", "destroy","design","french","typography", "leve
 var chap1 = ["dog","cat" ];
 var chap2 = ["arab","spring","activism" ];
 var chap3 = ["graphic","design" ];
-
-
-
-
 var conclusion = ["critical","shite" ];
-
 
 function run(list){
 
