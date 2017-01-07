@@ -3,13 +3,18 @@ var intro = ["essay","research", "destroy","design","french","typography", "leve
 var chap1 = ["dog","cat" ];
 var chap2 = ["arab","spring","activism" ];
 var chap3 = ["graphic","design" ];
+
+
+
+
 var conclusion = ["critical","shite" ];
 
-function run(lijst){
+
+function run(list){
 
 	var async_request=[];
 	var results = [];
-	var wordArray = lijst;
+	var wordArray = list;
 
 	dict = [];
 
@@ -105,7 +110,7 @@ function change(id){
 	var getSpan = document.getElementsByClassName('match '+id+'Span');
 
 	getSpan[0].style.color = "black";
-	
+
 	singlediv.innerHTML = "";
 	singlediv.innerHTML = id.toUpperCase();
 
