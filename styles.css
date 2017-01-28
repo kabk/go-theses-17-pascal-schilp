@@ -8,6 +8,10 @@
     src: url(caslon.otf);
 }
 
+*::-webkit-scrollbar { 
+    display: none; 
+}
+
 *{
 	margin:0;
 	padding:0;
@@ -21,34 +25,145 @@
                                   not supported by any browser */
 }
 
+* img{
+		filter: grayscale(100%);
+}
+
+.printobj{
+	margin-top:130px;
+	margin-bottom:130px;
+	height:3cm;
+	text-align:center;
+	line-height:3cm;
+	font-family: atlas;
+}
+
+sup{
+	color:blue;
+}
+
+.imgur h1{
+	color:blue;
+}
+
+h1{
+	font-size:64px;
+	color:blue;
+	letter-spacing: -2px;
+	font-family: caslon;
+}
+
+#linecont{
+	width:100vw;
+	height:60vh;
+	position:fixed;
+	z-index:0;
+}
+
+#lineleft{
+	border-right:solid black 5px;
+	height:100%;
+	float:left;
+	width:50%;
+}
+
+#lineright{
+	height:100%;
+	float:left;
+	width:50%;
+}
+
+h2{
+	font-size:32px;
+	color:black;
+	letter-spacing: -2px;
+	font-family: caslon;
+}
+
+.printobj img{
+	width:100%;
+	height:100%;
+	max-height:100%;
+	max-width:100%;
+}
+
+#keywordz{
+	height:auto;
+	width:4cm;
+	float:left;
+	margin-left:5px;
+	margin-right:5px;
+}
+
+#memez{
+	height:auto;
+	width:4cm;
+	float:left;
+	margin-left:5px;
+	margin-right:25px;
+}
+
+#textz{
+	width: 9cm;
+	float:left;
+	height:auto;
+	font-family: caslon;
+	font-size:18px;
+	line-height:16px;
+
+	margin-left:5px;
+	margin-right:5px;
+}
+
 #header{
 	position:fixed;
 	z-index:999;
-	background-color:black;
+
 
 
 	width:100vw;
 	height:20vh;
 
 	margin-top:-20vh;
-	padding-top:15px;
+	padding-top:25px;
 	
 	font-family:caslon;
-	font-size:60px;
-	line-height: 55px;
-	letter-spacing: -3px;
+	font-size:65px;
+	line-height: 50px;
+	letter-spacing: -5px;
 	text-align:center;
-	color:white;
+	color:black;
+	/*border-bottom:solid black 4px;*/
+}
+
+#foot{
+	font-family:caslon;
+	font-size:65px;
+	line-height: 50px;
+	letter-spacing: -5px;
+	text-align:center;
+	color:black;
+	z-index:999;
+
+
+	padding-top:25px;
+
+
+height:20vh;
+margin-top:60vh;
+position:fixed;
+width:100vw;
 }
 
 #footer{
-	background-color: black;
+	/*border-top:solid black 4px;*/
+	background-color: white;
 	height:20vh;
 	min-height:20vh;
 
 	line-height: 25px;
 
-	color:white;
+	color:black;
 	font-family: caslon;
 	font-size:30px;
 	text-align: center;
@@ -63,21 +178,47 @@
 	display:none;
 }
 
-a{
-	text-decoration: none!important;
-	color:white!important;
+
+#keymatch{
+	line-height: 40vh;
 }
 
-a:hover{
-	cursor: crosshair;
-	color:blue!important;
+#navleft{
+	color:blue;
+	font-family: caslon;
+	position:fixed;
+	height:100vh;
+	margin-top:-20vh;
+	z-index:1000;
+	margin-left:3vw;
+	text-align:left;
+	font-size:12px;
+}
+
+#navleft a{
+	text-decoration: none;
+	color:blue;
+}
+
+#navleft a:hover{
+	text-decoration: underline;
+	color:blue;
+}
+
+.imgur:hover{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efefef+0,ffffff+100&0.65+0,0+100 */
+background: -moz-linear-gradient(left,  rgba(239,239,239,0.65) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(239,239,239,0.65) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(239,239,239,0.65) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6efefef', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+
 }
 
 .imgur{
 	width:105%;
-	height:40vh;
+	height:20vh;
 
-	border-bottom: solid black 5px;
+	/*border-bottom: solid black 5px;*/
 	padding-bottom:15px;
 	padding-top:15px;
 
@@ -87,7 +228,34 @@ a:hover{
 	padding-right:0;
 	float:left;
 	overflow:hidden;
+	line-height: 20vh;
+	font-family: atlas;
 
+}
+
+.js div#preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: #333 url('http://files.mimoymima.com/images/loading.gif') no-repeat center center; }
+
+
+#highlight{
+	color:blue;
+	text-decoration: underline;
+}
+
+.imgur2{
+	width:105%;
+	height:20vh;
+
+	/*border-bottom: solid black 5px;*/
+	padding-bottom:15px;
+	padding-top:15px;
+
+	margin-left:-15px;
+	margin-right:0;
+	padding-left:0;
+	padding-right:0;
+	float:left;
+	overflow:hidden;
+	line-height: 20vh;
 	font-family: atlas;
 
 }
@@ -127,6 +295,10 @@ a:hover{
 	overflow:scroll;
 }
 
+.match{
+	color:blue;
+}
+
 #navigation{
     -ms-transform: rotate(270deg); /* IE 9 */
     -webkit-transform: rotate(270deg); /* Safari */
@@ -159,34 +331,132 @@ a:hover{
 	margin-top:20vh;
 }
 
+#cont{
+	overflow: scroll;
+}
+
 #left{
 	font-family: atlas;
 	color:blue;
 	text-align: center;
 	font-size:45px;
 	line-height: 45px;
-	padding-top:60px;
-	min-height:80vh;
-	height:80vh;
-	border-right:solid 2.5px black;
+	min-height:auto;
+	height:auto;
 }
 
 #right{
-	overflow:scroll;
-	min-height:80vh;
-	height:80vh;
-	border-left:solid 2.5px black;
+	min-height:auto;
+	height:auto;
 }
 
+
+@media only screen and (max-width: 765px) {
+
+	#online{
+		display:none;
+	}
+
+	#print{
+		display:block;
+	}
+
+	#main{
+		width:10cm;
+		margin-left: 4.5cm;
+		font-size:20px;
+		line-height:17px;
+		font-family: caslon;
+		white-space: pre-line;
+	}
+
+	#maintxt{
+		width:14cm;
+		margin-left:2.5cm;
+		font-size:13px;
+		line-height:13.2px;
+		font-family: caslon;
+		white-space: pre-line;
+	}
+
+	.chapter{
+		margin-left:-2cm;
+		font-family: atlas;
+		font-size:20px;
+	}
+
+	.chapter2{
+		margin-left:0cm;
+		font-family: atlas;
+		font-size:20px;
+	}
+
+	#printhead{
+		font-family: caslon;
+		text-align:center;
+		font-size:60px;
+		line-height: 55px;
+		letter-spacing: -3px;
+		margin-bottom:1cm;
+	}
+
+
+}
 
 
 @media print { 
- #online{
- 	display:none;
- }
+	
+	#online{
+		display:none;
+	}
 
-#print{
-	display:block;
-}
+	#print{
+		display:block;
+		margin: 1cm;
+	}
+
+	@page{
+		margin:0;
+	}
+
+	#main{
+		width:10cm;
+		margin-left: 4.5cm;
+		font-size:20px;
+		line-height:17px;
+		font-family: caslon;
+		white-space: pre-line;
+	}
+
+	#maintxt{
+		width:14cm;
+		margin-left:2.5cm;
+		font-size:13px;
+		line-height:13.2px;
+		font-family: caslon;
+		white-space: pre-line;
+	}
+
+	.chapter{
+		margin-left:-2cm;
+		font-family: atlas;
+		font-size:20px;
+	}
+
+	.chapter2{
+		margin-left:0cm;
+		font-family: atlas;
+		font-size:20px;
+	}
+
+	#printhead{
+		font-family: caslon;
+		text-align:center;
+		font-size:60px;
+		line-height: 55px;
+		letter-spacing: -3px;
+		margin-bottom:1cm;
+	}
+
 
 }
